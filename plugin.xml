@@ -32,7 +32,7 @@
         <clobbers target="plugin.backgroundMode" />
     </js-module>
 
-    <!-- ios -->
+    <!-- ios 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="BackgroundMode">
@@ -54,6 +54,7 @@
         <header-file src="src/ios/APPMethodMagic.h" />
         <source-file src="src/ios/APPMethodMagic.m" />
     </platform>
+    -->
 
     <!-- android -->
     <platform name="android">
@@ -94,17 +95,5 @@
             target-dir="src/de/appplant/cordova/plugin/background" />
     </platform>
 
-    <!-- browser -->
-    <platform name="browser">
-        <config-file target="config.xml" parent="/*">
-            <feature name="BackgroundMode">
-                <param name="browser-package" value="BackgroundMode"/>
-            </feature>
-        </config-file>
-
-        <js-module src="src/browser/BackgroundModeProxy.js" name="BackgroundMode.Proxy">
-            <runs />
-        </js-module>
-    </platform>
 
 </plugin>
